@@ -69,7 +69,7 @@ this is also in enviroment by the way.
 
 # How do I know it is done?
 
-You can ping http://localhost:8080/ors/v2/health or take a look at the console and see if something like this appears:
+You can ping http://localhost:8080/ors/v2/health and it will return a "status" ready or not ready. Or you can just take a look at the console and see if something like this appears:
 ```
 ors-app  | INFO [graphhopper.GraphHopper] - Loaded graph with ... nodes and ... edges
 ors-app  | INFO [routing.RoutingProfileManager] - Routing profiles initialized
