@@ -7,7 +7,7 @@ First and foremost, we need the docker-compose file, so navigate to the folder o
 curl -L -o docker-compose.yml https://github.com/GIScience/openrouteservice/releases/download/v8.0.0/docker-compose.yml
 ```
 
-#Get your osm.pbf file
+# Get your osm.pbf file
 I download this ```spain-latest.osm.pbf``` from https://download.geofabrik.de/europe/spain.html but feel free to download the one you need. Download it wherever, we will be moving it soon.
 
 # Modify the docker-compose file
