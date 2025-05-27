@@ -82,4 +82,10 @@ ors-app  | INFO [server.ServerConnector] - Started @8080
 
 ```
 
+# Docker-compose adjustement.
+Now to avoid rebuilding all the graphs every time we run the container, go to the docker-compose.yml file and
+```
+REBUILD_GRAPHS: "false"
+```
+
 # YOU ARE WELCOME!!
