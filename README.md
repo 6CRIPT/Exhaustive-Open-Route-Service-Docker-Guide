@@ -67,4 +67,19 @@ XMX: 8g # max RAM assigned to java. Rule of Thumb: <PBF-size> * <profiles> * 2
 ```
 this is also in enviroment by the way.
 
+# How do I know it is done?
+
+You can ping http://localhost:8080/ors/v2/health or take a look at the console and see if something like this appears:
+```
+ors-app  | INFO [graphhopper.GraphHopper] - Loaded graph with ... nodes and ... edges
+ors-app  | INFO [routing.RoutingProfileManager] - Routing profiles initialized
+ors-app  | INFO [openrouteservice.Main] - Started application in XXX seconds
+ors-app  | INFO [tomcat] - Server startup in XXXX ms
+
+or
+
+ors-app  | INFO [server.ServerConnector] - Started @8080
+
+```
+
 # YOU ARE WELCOME!!
