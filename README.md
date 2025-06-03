@@ -87,5 +87,17 @@ Now to avoid rebuilding all the graphs every time we run the container, go to th
 ```
 REBUILD_GRAPHS: "false"
 ```
+And last but not least, we have to uncomment the following code:
+```
+volumes:
+      # Mount relative directories. ONLY for local container runtime. To switch to docker managed volumes see 'Docker Volumes configuration' section below.
+      - ./ors-docker:/home/ors # Mount the ORS application directory (for logs, graphs, elevation_cache, etc.) into its own directory
+      - ./graphs:/home/ors/graphs  # Mount graphs directory individually
+      - ./elevation_cache:/home/ors/elevation_cache  # Mount elevation cache directory individually
+      - ./config:/home/ors/config  # Mount configuration directory individually
+      - ./logs:/home/ors/logs  # Mount logs directory individually
+      - ./files:/home/ors/files  # Mount files directory individually
+```
+Now when running the container, it will find the graphs and other files successfully
 
 # YOU ARE WELCOME!!
